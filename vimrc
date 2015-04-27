@@ -37,6 +37,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
+Plug 'maxbrunsfeld/vim-yankstack'
 call plug#end()
 
 filetype plugin indent on
@@ -155,3 +156,8 @@ let g:syntastic_python_checkers = ['flake8']
 " gkz/vim-ls
 au BufNewFile,BufReadPost *.ls setl foldmethod=indent nofoldenable
 au BufNewFile,BufReadPost *.ls setl shiftwidth=2 expandtab
+
+" yankstack settings
+let g:yankstack_map_keys = 0
+nmap <leader>p <Plug>yankstack_substitute_older_paste
+nmap <leader>P <Plug>yankstack_substitute_newer_paste
