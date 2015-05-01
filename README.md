@@ -1,5 +1,4 @@
 # white1033's vimrc
-
 Author: Yen-Ying Lee
 
 # Setup
@@ -14,3 +13,10 @@ sh <(wget --no-check-certificate https://github.com/white1033/white1033-vimrc/ra
 ```
 
 After this vimrc configuration is installed, enter Vim and run `:PlugInstall` command will automatic install all plugins for you.
+
+# Upgrade
+You can upgrade this vonfiguration via `git pull`. For example
+```
+cd ~/.vim
+git pull
+```
