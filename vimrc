@@ -38,6 +38,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'maxbrunsfeld/vim-yankstack'
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 filetype plugin indent on
