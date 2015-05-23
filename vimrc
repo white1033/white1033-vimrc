@@ -23,6 +23,7 @@ Plug 'honza/vim-snippets'
 Plug 'leshill/vim-json'
 Plug 'gkz/vim-ls'
 Plug 'kchmck/vim-coffee-script'
+Plug 'digitaltoad/vim-jade'
 
 " useful tools
 Plug 'bling/vim-airline'
