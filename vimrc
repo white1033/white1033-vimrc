@@ -40,6 +40,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'mattn/emmet-vim'
+Plug 'Raimondi/delimitMate'
 call plug#end()
 
 filetype plugin indent on
