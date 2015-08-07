@@ -144,7 +144,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 "set hlsearch
 "nmap <leader>hl :let @/ = ""<CR>
 
-colorscheme gruvbox
+colorscheme PaperColor
 set background=dark
 
 " Jedi related settings
