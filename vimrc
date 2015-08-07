@@ -9,6 +9,7 @@ call plug#begin()
 
 " color scheme
 Plug 'morhetz/gruvbox'
+Plug 'NLKNguyen/papercolor-theme'
 
 " conceal lambda into λ, etc.
 Plug 'ehamberg/vim-cute-python'
@@ -24,6 +25,7 @@ Plug 'leshill/vim-json'
 Plug 'gkz/vim-ls'
 Plug 'kchmck/vim-coffee-script'
 Plug 'digitaltoad/vim-jade'
+Plug 'hdima/python-syntax'
 
 " useful tools
 Plug 'bling/vim-airline'
@@ -159,7 +161,7 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'badwolf'
+let g:airline_theme = 'PaperColor'
 
 " Syntastic settings
 let g:syntastic_python_checkers = ['flake8']
@@ -172,3 +174,6 @@ au BufNewFile,BufReadPost *.ls setl shiftwidth=2 expandtab
 let g:yankstack_map_keys = 0
 nmap <leader>p <Plug>yankstack_substitute_older_paste
 nmap <leader>P <Plug>yankstack_substitute_newer_paste
+
+" python-syntax
+let python_highlight_all = 1
