@@ -22,6 +22,8 @@ Plug 'honza/vim-snippets'
 
 " language support
 Plug 'leshill/vim-json'
+Plug 'othree/yajs.vim'
+Plug 'mxw/vim-jsx'
 Plug 'gkz/vim-ls'
 Plug 'kchmck/vim-coffee-script'
 Plug 'digitaltoad/vim-jade'
