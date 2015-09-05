@@ -29,9 +29,9 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'digitaltoad/vim-jade'
 Plug 'hdima/python-syntax'
 Plug 'jiangmiao/simple-javascript-indenter'
-Plugin 'othree/jspc.vim'
-Plugin 'bigfish/vim-js-context-coloring'
-Plugin 'othree/jsdoc-syntax.vim'
+Plug 'othree/jspc.vim'
+Plug 'bigfish/vim-js-context-coloring'
+Plug 'othree/jsdoc-syntax.vim'
 
 " useful tools
 Plug 'bling/vim-airline'
