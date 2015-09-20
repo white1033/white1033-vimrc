@@ -49,6 +49,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
+Plugin 'google/vim-maktaba'
+Plugin 'google/vim-codefmt'
+Plugin 'google/vim-glaive'
+call glaive#Install()
+Glaive codefmt plugin[mappings]
 call plug#end()
 
 filetype plugin indent on
