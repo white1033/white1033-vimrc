@@ -32,6 +32,7 @@ Plug 'jiangmiao/simple-javascript-indenter'
 Plug 'othree/jspc.vim'
 Plug 'bigfish/vim-js-context-coloring'
 Plug 'othree/jsdoc-syntax.vim'
+Plug 'gavocanov/vim-js-indent'
 
 " useful tools
 Plug 'bling/vim-airline'
