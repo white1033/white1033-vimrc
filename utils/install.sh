@@ -33,7 +33,7 @@ then
 fi
 
 # check if git is installed
-hash git >/dev/null && /usr/bin/env git clone git://github.com/white1033/dotfiles.git ~/.vim || {
+hash git >/dev/null && /usr/bin/env git clone git://github.com/white1033/white1033-vimrc.git ~/.vim || {
   echo "Sorry, Git is not installed in this machine."
   exit
 }
