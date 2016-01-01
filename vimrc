@@ -51,7 +51,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
-Plug "marijnh/tern_for_vim"
+Plug 'marijnh/tern_for_vim'
 call plug#end()
 
 filetype plugin indent on
