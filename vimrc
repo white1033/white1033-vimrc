@@ -15,10 +15,8 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'ehamberg/vim-cute-python'
 
 " snippet
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
-Plug 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " language support
 Plug 'othree/yajs.vim'
@@ -51,7 +49,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
-Plug 'marijnh/tern_for_vim'
+Plug 'ervandew/supertab'
+Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 filetype plugin indent on
@@ -189,3 +188,13 @@ let python_highlight_all = 1
 " jscontext-coloring
 let g:js_context_colors_enabled = 0
 let g:js_context_colors = [ "#EEEEEE", "#99FF99", "#ded35d", 172, "#ff9999", 161, 63 ]
+
+" YCM
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
