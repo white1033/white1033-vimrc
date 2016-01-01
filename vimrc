@@ -192,6 +192,9 @@ let g:js_context_colors = [ "#EEEEEE", "#99FF99", "#ded35d", 172, "#ff9999", 161
 " YCM
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
+" SuperTab
 let g:SuperTabDefaultCompletionType = '<C-n>'
 
 " UltiSnips
