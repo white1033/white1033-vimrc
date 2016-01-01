@@ -15,8 +15,8 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'ehamberg/vim-cute-python'
 
 " snippet
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 " language support
 Plug 'othree/yajs.vim'
