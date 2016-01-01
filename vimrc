@@ -21,8 +21,8 @@ Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 
 " language support
-Plug 'leshill/vim-json'
 Plug 'othree/yajs.vim'
+Plug 'othree/es.next.syntax.vim'
 Plug 'mxw/vim-jsx'
 Plug 'gkz/vim-ls'
 Plug 'kchmck/vim-coffee-script'
@@ -32,7 +32,8 @@ Plug 'jiangmiao/simple-javascript-indenter'
 Plug 'othree/jspc.vim'
 Plug 'bigfish/vim-js-context-coloring'
 Plug 'othree/jsdoc-syntax.vim'
-Plug 'gavocanov/vim-js-indent'
+Plug 'JSON.vim'
+Plug 'othree/javascript-libraries-syntax.vim'
 
 " useful tools
 Plug 'bling/vim-airline'
@@ -50,6 +51,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
+Plug "marijnh/tern_for_vim"
 call plug#end()
 
 filetype plugin indent on
