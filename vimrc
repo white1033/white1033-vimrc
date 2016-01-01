@@ -185,3 +185,7 @@ nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
 " python-syntax
 let python_highlight_all = 1
+
+" jscontext-coloring
+let g:js_context_colors_enabled = 0
+let g:js_context_colors = [ "#EEEEEE", "#99FF99", "#ded35d", 172, "#ff9999", 161, 63 ]
