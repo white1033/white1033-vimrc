@@ -35,11 +35,9 @@ Plug 'othree/javascript-libraries-syntax.vim'
 
 " useful tools
 Plug 'bling/vim-airline'
-Plug 'davidhalter/jedi-vim'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/syntastic'
-Plug 'jmcantrell/vim-virtualenv'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'nathanaelkane/vim-indent-guides'
@@ -173,6 +171,7 @@ let g:airline_theme = 'PaperColor'
 
 " Syntastic settings
 let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_javascript_checkers = ['eslint']
 
 " gkz/vim-ls
 au BufNewFile,BufReadPost *.ls setl foldmethod=indent nofoldenable
