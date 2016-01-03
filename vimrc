@@ -153,13 +153,6 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 colorscheme PaperColor
 set background=dark
 
-" Jedi related settings
-let g:jedi#use_tabs_not_buffers = 0
-let g:jedi#popup_on_dot = 0
-let g:jedi#completions_command = "<C-p>"
-let g:jedi#show_call_signatures = 0
-let g:jedi#use_splits_not_buffers = 'right'
-
 "  Airline settings
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep = ''
@@ -200,3 +193,6 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+" SimpleJsIndenter
+let g:SimpleJsIndenter_BriefMode = 1
