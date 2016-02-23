@@ -26,15 +26,16 @@ Plug 'gkz/vim-ls'
 Plug 'kchmck/vim-coffee-script'
 Plug 'digitaltoad/vim-jade'
 Plug 'hdima/python-syntax'
-Plug 'jiangmiao/simple-javascript-indenter'
 Plug 'othree/jspc.vim'
 Plug 'bigfish/vim-js-context-coloring'
 Plug 'othree/jsdoc-syntax.vim'
 Plug 'JSON.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'gavocanov/vim-js-indent'
 
 " useful tools
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/syntastic'
@@ -193,6 +194,3 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-
-" SimpleJsIndenter
-let g:SimpleJsIndenter_BriefMode = 1
