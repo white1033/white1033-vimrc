@@ -151,7 +151,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 "set hlsearch
 "nmap <leader>hl :let @/ = ""<CR>
 
-colorscheme PaperColor
+colorscheme papercolor
 set background=dark
 
 "  Airline settings
