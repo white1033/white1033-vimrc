@@ -10,6 +10,7 @@ call plug#begin()
 " color scheme
 Plug 'morhetz/gruvbox'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'kristijanhusak/vim-hybrid-material'
 
 " conceal lambda into λ, etc.
 Plug 'ehamberg/vim-cute-python'
@@ -151,7 +152,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 "set hlsearch
 "nmap <leader>hl :let @/ = ""<CR>
 
-colorscheme PaperColor
+colorscheme hybrid_reverse
 set background=dark
 
 "  Airline settings
@@ -161,7 +162,7 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'papercolor'
+let g:airline_theme = 'hybrid'
 
 " Syntastic settings
 let g:syntastic_python_checkers = ['flake8']
