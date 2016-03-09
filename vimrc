@@ -11,6 +11,7 @@ call plug#begin()
 Plug 'morhetz/gruvbox'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'jdkanani/vim-material-theme'
 
 " conceal lambda into λ, etc.
 Plug 'ehamberg/vim-cute-python'
@@ -152,7 +153,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 "set hlsearch
 "nmap <leader>hl :let @/ = ""<CR>
 
-colorscheme hybrid_reverse
+colorscheme material-theme
 set background=dark
 
 "  Airline settings
