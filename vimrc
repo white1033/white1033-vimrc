@@ -153,7 +153,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 "set hlsearch
 "nmap <leader>hl :let @/ = ""<CR>
 
-colorscheme material-theme
+colorscheme PaperColor
 set background=dark
 
 "  Airline settings
@@ -163,7 +163,7 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'hybrid'
+let g:airline_theme = 'papercolor'
 
 " Syntastic settings
 let g:syntastic_python_checkers = ['flake8']
