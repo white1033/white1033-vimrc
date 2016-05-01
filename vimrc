@@ -5,7 +5,7 @@ set nocompatible
 syntax enable
 filetype on
 
-call plug#begin()
+call plug#begin('~/.vim/plugged')
 
 " color scheme
 Plug 'morhetz/gruvbox'
@@ -51,7 +51,7 @@ Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
 Plug 'ervandew/supertab'
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', {'do': 'python2 install.py --tern-completer'}
 call plug#end()
 
 filetype plugin indent on
