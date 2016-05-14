@@ -34,6 +34,7 @@ Plug 'othree/jsdoc-syntax.vim'
 Plug 'JSON.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'gavocanov/vim-js-indent'
+Plug 'Slava/vim-spacebars'
 
 " useful tools
 Plug 'vim-airline/vim-airline'
