@@ -105,6 +105,8 @@ autocmd BufRead,BufNewFile *.fdoc set filetype=yaml
 " md is markdown
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile *.md set spell
+" set javascript tab width
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
