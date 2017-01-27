@@ -35,6 +35,7 @@ Plug 'JSON.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'gavocanov/vim-js-indent'
 Plug 'Slava/vim-spacebars'
+Plug 'rust-lang/rust.vim'
 
 " useful tools
 Plug 'vim-airline/vim-airline'
@@ -52,7 +53,7 @@ Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
 Plug 'ervandew/supertab'
-Plug 'Valloric/YouCompleteMe', {'do': 'python2 install.py --tern-completer'}
+Plug 'Valloric/YouCompleteMe', {'do': 'python2 install.py --gocode-completer --racer-completer'}
 call plug#end()
 
 filetype plugin indent on
