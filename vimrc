@@ -123,6 +123,10 @@ else
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
+" set Vim-specific sequences for RGB colors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"]]
+
 " Don't copy the contents of an overwritten selection.
 vnoremap p "_dP
 
