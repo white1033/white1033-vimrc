@@ -12,6 +12,7 @@ Plug 'morhetz/gruvbox'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'jdkanani/vim-material-theme'
+Plug 'tyrannicaltoucan/vim-quantum'
 
 " conceal lambda into λ, etc.
 Plug 'ehamberg/vim-cute-python'
@@ -157,8 +158,12 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 "set hlsearch
 "nmap <leader>hl :let @/ = ""<CR>
 
-colorscheme hybrid_material
+colorscheme quantum
 set background=dark
+
+if has("termguicolors")
+    set termguicolors
+endif
 
 "  Airline settings
 let g:airline_powerline_fonts = 1
@@ -167,7 +172,7 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'hybrid'
+let g:airline_theme = 'quantum'
 
 " Syntastic settings
 let g:syntastic_python_checkers = ['flake8']
@@ -203,3 +208,5 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " Rust format
 let g:rustfmt_autosave = 1
+
+let g:quantum_black = 1
