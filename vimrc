@@ -8,11 +8,7 @@ filetype on
 call plug#begin('~/.vim/plugged')
 
 " color scheme
-Plug 'morhetz/gruvbox'
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'kristijanhusak/vim-hybrid-material'
-Plug 'jdkanani/vim-material-theme'
-Plug 'tyrannicaltoucan/vim-quantum'
+Plug 'jacoborus/tender.vim'
 
 " conceal lambda into λ, etc.
 Plug 'ehamberg/vim-cute-python'
@@ -162,7 +158,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 "set hlsearch
 "nmap <leader>hl :let @/ = ""<CR>
 
-colorscheme quantum
+colorscheme tender
 set background=dark
 
 if has("termguicolors")
@@ -176,7 +172,7 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'quantum'
+let g:airline_theme = 'tender'
 
 " gkz/vim-ls
 au BufNewFile,BufReadPost *.ls setl foldmethod=indent nofoldenable
