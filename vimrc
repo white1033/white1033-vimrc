@@ -8,7 +8,7 @@ filetype on
 call plug#begin('~/.vim/plugged')
 
 " color scheme
-Plug 'jacoborus/tender.vim'
+Plug 'arcticicestudio/nord-vim'
 
 " conceal lambda into λ, etc.
 Plug 'ehamberg/vim-cute-python'
@@ -35,8 +35,8 @@ Plug 'Slava/vim-spacebars'
 Plug 'rust-lang/rust.vim'
 
 " useful tools
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
+Plug 'maximbaz/lightline-ale'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'w0rp/ale'
@@ -50,7 +50,7 @@ Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
 Plug 'ervandew/supertab'
-Plug 'Valloric/YouCompleteMe', {'do': 'python2 install.py --gocode-completer --racer-completer'}
+Plug 'Valloric/YouCompleteMe', {'do': './install.py --go-completer'}
 call plug#end()
 
 filetype plugin indent on
@@ -158,21 +158,46 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 "set hlsearch
 "nmap <leader>hl :let @/ = ""<CR>
 
-colorscheme tender
+colorscheme nord
 set background=dark
 
-if has("termguicolors")
-    set termguicolors
-endif
+" if has("termguicolors")
+"     set termguicolors
+" endif
 
-"  Airline settings
-let g:airline_powerline_fonts = 1
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'tender'
+"  lightline settings
+let g:lightline = {
+      \   'colorscheme': 'nord',
+      \   'active': {
+      \     'left': [ [ 'mode' ] ],
+      \     'right': [ [ 'linter_ok', 'linter_checking', 'linter_errors', 'linter_warnings', 'trailing', 'lineinfo' ], [ 'fileinfo' ] ],
+      \   },
+      \   'inactive': {
+      \     'right': [ [ 'lineinfo' ], [ 'fileinfo' ] ],
+      \   },
+      \   'component': {
+      \     'lineinfo': '%l:%-v',
+      \   },
+      \   'component_expand': {
+      \     'linter_ok': 'lightline#ale#ok',
+      \     'linter_checking': 'lightline#ale#checking',
+      \     'linter_warnings': 'lightline#ale#warnings',
+      \     'linter_errors': 'lightline#ale#errors',
+      \   },
+      \   'component_type': {
+      \     'buffers': 'tabsel',
+      \     'trailing': 'error',
+      \     'linter_ok': 'left',
+      \     'linter_checking': 'left',
+      \     'linter_warnings': 'warning',
+      \     'linter_errors': 'error',
+      \   },
+      \ }
+
+" let g:lightline#ale#indicator_checking = "\uf110"
+" let g:lightline#ale#indicator_warnings = "\uf071"
+" let g:lightline#ale#indicator_errors = "\uf05e"
+" let g:lightline#ale#indicator_ok = "\uf00c"
 
 " gkz/vim-ls
 au BufNewFile,BufReadPost *.ls setl foldmethod=indent nofoldenable
