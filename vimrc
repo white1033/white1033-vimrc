@@ -161,9 +161,9 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 colorscheme nord
 set background=dark
 
-" if has("termguicolors")
-"     set termguicolors
-" endif
+if has("termguicolors")
+    set termguicolors
+endif
 
 "  lightline settings
 let g:lightline = {
